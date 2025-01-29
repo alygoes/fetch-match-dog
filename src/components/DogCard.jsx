@@ -5,10 +5,12 @@ const DogCard = ({ dog, initialFavorite, setFavoriteDogs, freezeButton }) => {
   const [isFavorite, setIsFavorite] = useState(initialFavorite ? true : false);
   const toggleFavorite = () => {
     if (isFavorite) {
-      setFavoriteDogs((dogs) => ([...dogs.filter((favDog) => favDog !== dog.id)]));
+      setFavoriteDogs((dogs) => [
+        ...dogs.filter((favDog) => favDog !== dog.id),
+      ]);
       setIsFavorite(false);
     } else {
-      setFavoriteDogs((dogs) => ([...dogs, dog.id]));
+      setFavoriteDogs((dogs) => [...dogs, dog.id]);
       setIsFavorite(true);
     }
   };
@@ -34,7 +36,7 @@ const DogCard = ({ dog, initialFavorite, setFavoriteDogs, freezeButton }) => {
         <h6>{dog.zip_code}</h6>
         {isFavorite ? (
           <button
-            onClick={freezeButton ? ()=>{} : toggleFavorite}
+            onClick={freezeButton ? () => {} : toggleFavorite}
             style={{
               border: "0",
               background: "none",

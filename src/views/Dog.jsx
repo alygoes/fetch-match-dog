@@ -29,7 +29,6 @@ const Dog = () => {
       .catch(console.error);
   }, []);
 
-
   useEffect(() => {
     const breedQueries = selectedBreeds.length
       ? selectedBreeds.map((breed) => `&breeds=${breed}`).join("")
@@ -64,7 +63,7 @@ const Dog = () => {
   };
 
   const generateMatch = async () => {
-    console.log(favoriteDogs)
+    console.log(favoriteDogs);
     let matchID;
     try {
       const response = await axiosInstance.post("/dogs/match", favoriteDogs);
@@ -125,10 +124,7 @@ const Dog = () => {
           </div>
           <div className="col">
             <Dropdown>
-              <Dropdown.Toggle
-                data-bs-theme="light"
-                variant="light"
-              >
+              <Dropdown.Toggle data-bs-theme="light" variant="light">
                 Sort By Breed {sortDirection === "asc" ? "A-Z" : "Z-A"}
               </Dropdown.Toggle>
               <Dropdown.Menu>
