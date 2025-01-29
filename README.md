@@ -2,10 +2,11 @@
 
 ## Run this app
 
-To run this app locally, install the dependencies with `npm install` then 
+To run this app locally, install the dependencies with `npm install`.
+Then run `npm start` 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-To build, run `npm build`
+To build, run `npm run build`
 
 ## Testing
 run `npm test`
@@ -14,7 +15,7 @@ run `npm test`
 ## About
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-You can see a live version of this app at: 
+You can see a live version of this app at: [https://alygoes.github.io/fetch-match-dog/](https://alygoes.github.io/fetch-match-dog/)
 
 ## Future Development
 
