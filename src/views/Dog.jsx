@@ -63,11 +63,9 @@ const Dog = () => {
   };
 
   const generateMatch = async () => {
-    console.log(favoriteDogs);
     let matchID;
     try {
       const response = await axiosInstance.post("/dogs/match", favoriteDogs);
-      console.log(response.data);
       matchID = response?.data.match;
     } catch (err) {
       console.error(err);

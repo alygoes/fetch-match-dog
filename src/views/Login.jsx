@@ -8,7 +8,6 @@ const Login = () => {
   const handleLogin = ({ name, email }) => {
     postLogin({ name, email })
       .then((res) => {
-        console.log(res);
         navigate("/");
       })
       .catch(console.error);
