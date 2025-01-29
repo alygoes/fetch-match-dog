@@ -163,7 +163,7 @@ const Dog = () => {
               </div>
               <div className="mt-2">
                 <ResponsivePaginationComponent
-                  curent={currentPage}
+                  current={currentPage}
                   total={total ? total / 25 : 0}
                   onPageChange={setCurrentPage}
                 />
