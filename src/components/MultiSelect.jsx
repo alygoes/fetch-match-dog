@@ -1,31 +1,32 @@
-import { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const SelectableItem = ({ id, text, onSelect, onRemove }) => {
-  const [isSelected, setIsSelected] = useState(false);
+const SelectableItem = ({ id, text, onSelect, onRemove, isSelectedItem }) => {
   const itemClick = () => {
-    if (isSelected) {
-      onRemove(id)
+    if (isSelectedItem) {
+      onRemove(id);
     } else {
-      onSelect(id)
+      onSelect(id);
     }
-    setIsSelected((x) => !x);
   };
 
   return (
     <Dropdown.Item
       onClick={itemClick}
-      style={isSelected ? { background: "hotpink" } : {}}
+      style={isSelectedItem ? { background: "#d7d7d7" } : {}}
     >
       {text}
     </Dropdown.Item>
   );
 };
 
-const MultiSelect = ({ items, onSelect, onRemove }) => {
+const MultiSelect = ({ items, onSelect, onRemove, selectedItems }) => {
   return (
     <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+      <Dropdown.Toggle
+        data-bs-theme="light"
+        variant="light"
+        id="dropdown-basic"
+      >
         Filter by Breed
       </Dropdown.Toggle>
 
@@ -37,6 +38,7 @@ const MultiSelect = ({ items, onSelect, onRemove }) => {
             id={item}
             onSelect={onSelect}
             onRemove={onRemove}
+            isSelectedItem={selectedItems.includes(item)}
           />
         ))}
       </Dropdown.Menu>
