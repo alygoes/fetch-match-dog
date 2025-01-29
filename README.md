@@ -21,15 +21,15 @@ You can see a live version of this app at: [https://alygoes.github.io/fetch-matc
 
 My next features would be:
 
--Login page:
+- Login page:
     1. Validate the email field as an email type
     2. Prevent users from submitting to the login endpoint if either field is empty and provide that feedback
     3. Provide users with an error on login fails
--Dog search features
+- Dog search features
     1. Displaying dog city and state instead of zip
     2. Provide more sort and filter options: distance from location, age
     3. Filtering as a left sidebar (like petfinder)
--Other
+- Other
     1. A logout link
     2. Test every component
     3. A view for all your favorite dogs
