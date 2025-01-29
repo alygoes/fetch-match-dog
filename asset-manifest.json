@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/alygoes.github.io/fetch-match-dog/static/css/main.ca67ef22.css",
-    "main.js": "/alygoes.github.io/fetch-match-dog/static/js/main.ce68a56b.js",
-    "index.html": "/alygoes.github.io/fetch-match-dog/index.html",
-    "main.ca67ef22.css.map": "/alygoes.github.io/fetch-match-dog/static/css/main.ca67ef22.css.map",
-    "main.ce68a56b.js.map": "/alygoes.github.io/fetch-match-dog/static/js/main.ce68a56b.js.map"
+    "main.css": "/fetch-match-dog/static/css/main.ca67ef22.css",
+    "main.js": "/fetch-match-dog/static/js/main.ce68a56b.js",
+    "index.html": "/fetch-match-dog/index.html",
+    "main.ca67ef22.css.map": "/fetch-match-dog/static/css/main.ca67ef22.css.map",
+    "main.ce68a56b.js.map": "/fetch-match-dog/static/js/main.ce68a56b.js.map"
   },
   "entrypoints": [
     "static/css/main.ca67ef22.css",
